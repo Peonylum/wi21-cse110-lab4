@@ -21,7 +21,7 @@ inside of the for loop and is therefore only known within the scope of the for l
     A. 32 will be printed since the character 3 will turn the whole output into a string, so adding a 2 would essentially be like a concatenation of the character 2.
     B. 1 will be printed since you cannot subtract strings, so '3' will be turned into an int and integer subtraction will be performed.
     C. 3 will be printed since null equates to 0 and so integer addition will be performed.
-    D. 3null will be printed since '3' is a character and null will be treated as a string, so these two will be concatenated.
+    D. 3null will be printed since '3' is a character and `null` will be treated as a string, so these two will be concatenated.
     E. 4 will be printed since the integer value of true will be taken and added to 3, since true equates to 1, it will ad 1 to 3.
     F. 0 will be printed since both false and null equate to an integer value of 0.
     G. 3undefined will be printed since 3 is a string and will therefore concatenate whatever is after it, in this case it will just concatenate undefined to it.
@@ -32,10 +32,10 @@ inside of the for loop and is therefore only known within the scope of the for l
     C. true will be printed since the '2' will be converted to a numerical value.
     D. false will be printed since === is a strict equality check and will therefore not perform type conversion between the two data types.
     E. false will be printed since the numerical value of true is 1.
-    F. true will be printed since 2 has value, and is therefore true by the Boolean().
+    F. true will be printed since 2 has value, and is therefore true by the `Boolean()`.
 16. The == operator will perform type conversion if two different data types are being compared. However, the === operator checks for strict equality and will therefore not perform type conversion between two different data types.
 17. How are you? will be printed since 2 is a non-zero value, which equates to true. This is not the same as 2 == true, since this will be checking if 2 == 1 (true equates to an integer value of 1).
-19. The result will be [6,8,10]. This occurs because the modifyArray will take in an array and a function as its parameters. Since we passed in doSomething as our second parameter, we will enter modifyArray and its for loop and push whatever is the result of doSomething(array[i], function(x)). function(x) is yet another callback function for doSomething. Once we enter doSomething, we will use array[i] as num and function(x) as its callback. Since doSomething is returning the value of callback(num + 2), it will give us the value of function(array[i] + 2) and within function() it will multiplly the parameter value by 2, which gives us (array[i] + 2) * 2.
+19. The result will be [6,8,10]. This occurs because the modifyArray will take in an array and a function as its parameters. Since we passed in doSomething as our second parameter, we will enter `modifyArray()` and its for loop and push whatever is the result of `doSomething(array[i], function(x))`. `function(x)` is yet another callback function for doSomething. Once we enter `doSomething()`, we will use `array[i]` as num and `function(x)` as its callback. Since `doSomething()` is returning the value of `callback(num + 2)`, it will give us the value of `function(array[i] + 2)` and within `function()` it will multiply the parameter value by 2, which gives us `(array[i] + 2) * 2`.
 21.  Output: 1
              4
              3
