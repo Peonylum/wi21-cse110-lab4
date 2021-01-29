@@ -1,7 +1,7 @@
-##Part 1
+## Part 1
 1. The bug was that num1 and num2 were strings, so adding them together was actually concatenating them instead of mathematically adding them together. The result of their addition was a string and not a number.
 
-##Part 2
+## Part 2
 1. citylots.json
 2. part2.js
 3. 11.7 MB
